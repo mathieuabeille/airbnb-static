@@ -1,10 +1,137 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: AirB'n'B
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+<div class="banner">
+      <div class="container">
+        <div class="row">
+          <h1>WELCOME HOME</h1>
+          <h2>Rent places as unique as you are with Airbnb.</h2>
+          <button type="button" class="btn btn-primary btn-lg">How it works</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your features code -->
+    <div class="row">
+      <div class="text-center padded col-md-3 col-sm-6 col-xs-12">
+          <img src="images/globe.png" alt="">
+          <h3>Discover the world</h3>
+          <p>The earth is your new home</p>
+      </div>
+      <div class="text-center padded col-md-3 col-sm-6 col-xs-12">
+        <img src="images/beer.png" alt="">
+        <h3>Meet people</h3>
+        <p>Discover new culture and lifestyle</p>
+      </div>
+      <div class="text-center padded col-md-3 col-sm-6 col-xs-12">
+        <img src="images/dollar.png" alt="">
+        <h3>Pay online</h3>
+        <p>No cash issues anymore</p>
+      </div>
+      <div class="text-center padded col-md-3 col-sm-6 col-xs-12">
+        <img src="images/heart.png" alt="">
+        <h3>Share and love</h3>
+        <p>Join a community you will love</p>
+      </div>
+    </div>
+
+<!-- cards -->
+<div class="wrapper-grey">
+<div class="container">
+      <h2 class="text-center">Vos prochains voyages</h2>
+      <!-- Code your card HTML here -->
+      <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="background: linear-gradient(0deg, rgba(60, 100, 255,0.4), rgba(255, 255, 255,0.4)), url('images/card-london.jpeg');">
+          <div class="card-text">
+            <h1>Londres</h1>
+          </div>
+
+          <div class="card-desc">
+            <h2>Lacazette's home</h2>
+            <h4> Nice flat in picadilly</h4>
+          </div>
+
+          <div class="card-photo">
+            <img src="images/seb.jpg" class="album">
+          </div>
+        </div>
+        </div>
+
+
+  <div class="col-md-4">
+        <div class="card" style="background: linear-gradient(0deg, rgba(60, 100, 255,0.4), rgba(255, 255, 255,0.4)), url('images/card-brussels.jpeg');">
+          <div class="card-text">
+            <h1>Brussels</h1>
+          </div>
+
+          <div class="card-desc">
+            <h2>Paul's home</h2>
+            <h4>In the center</h4>
+          </div>
+          <div class="card-photo">
+            <img src="images/romain.jpeg" class="album">
+          </div>
+        </div>
+  </div>
+   <div class="col-md-4">
+        <div class="card" style="background: linear-gradient(0deg, rgba(60, 100, 255,0.4), rgba(255, 255, 255,0.4)), url('images/card-paris.jpg');">
+          <div class="card-text">
+            <h1>Paris</h1>
+          </div>
+
+          <div class="card-desc">
+            <h2>Anne's house</h2>
+            <h4>In the center</h4>
+          </div>
+          <div class="card-photo">
+            <img src="images/anne.jpg" class="album">
+          </div>
+        </div>
+  </div>
 </div>
+
+        </div>
+      </div>
+
+    <!-- Your newsletter code -->
+
+    <form action="#" class="text-center padded marged form-inline">
+      <h3>Get news from us</h3>
+      <input type="email" class="form-control" id="your-email" placeholder="bob@gmail.com">
+      <input type="button" class="btn btn-primary btn-sm" value="Suscribe">
+    </form>
+        <!-- Your map code -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
+
+    <!-- Your footer code -->
+<div class="footer">
+<i class="fa fa-youtube" aria-hidden="true"></i>
+<i class="fa fa-instagram" aria-hidden="true"></i>
+<i class="fa fa-facebook" aria-hidden="true"></i>
+<i class="fa fa-twitter" aria-hidden="true"></i>
+<div class="marged"><p>This is a Airbnb Home challenge @ LeWagon</p></div>
+</div>
+
